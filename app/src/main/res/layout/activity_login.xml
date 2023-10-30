@@ -1,9 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    android:background="#FFEFBF"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/appname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope"
+                android:padding="15dp"
+                android:text="App name"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/slogan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cook Smart, Eat Right, Anytime, Anywhere" />
+
+            <TextView
+                android:id="@+id/Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="Log in"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:padding="10dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/emailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Email Address"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="text" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:cardCornerRadius="15dp">
+
+                <Button
+                    android:id="@+id/loginBnt"
+                    android:layout_width="269.44dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:text="Log in"
+                     />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="or"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Don’t have an account?  " />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Register Now"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+</RelativeLayout>

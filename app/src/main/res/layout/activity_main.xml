@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/getStarted"
+    android:id="@+id/login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFEFBF"
@@ -12,7 +12,7 @@
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/background" />
+        android:src="@drawable/homebackground" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -29,9 +29,9 @@
             android:layout_width="305dp"
             android:layout_height="513dp"
             android:layout_gravity="center_horizontal|center"
+            android:layout_marginTop="70dp"
             app:cardBackgroundColor="@color/white"
-            app:cardElevation="8dp"
-            android:layout_marginTop="70dp">
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -66,14 +66,26 @@
 
         </androidx.cardview.widget.CardView>
 
-        <Button
-            android:id="@+id/getStartedBnt"
-            android:layout_width="269.44dp"
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:text="Get Started"
-            app:cornerRadius="15dp"
-            android:background="@color/black" /> <!-- Set button color -->
+            app:cardCornerRadius="15dp">
+
+            <Button
+                android:id="@+id/loginBnt"
+                android:layout_width="269.44dp"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:clickable="true"
+                android:shadowColor="@android:color/black"
+                android:text="Get Started"
+                android:textColorHighlight="@color/black"
+                android:textColorLink="@color/black"
+                app:cornerRadius="100dp"
+                app:rippleColor="#000000"
+                app:strokeColor="@android:color/black" />
+        </androidx.cardview.widget.CardView> <!-- Set button color -->
     </LinearLayout>
 </RelativeLayout>

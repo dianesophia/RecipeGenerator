@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/getStarted"
+    android:id="@+id/login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFEFBF"
@@ -42,7 +42,7 @@
                 android:text="Cook Smart, Eat Right, Anytime, Anywhere" />
 
             <TextView
-                android:id="@+id/Register"
+                android:id="@+id/Login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/inter_medium"
@@ -50,7 +50,8 @@
                 android:textStyle="bold"
                 android:textSize="24dp"
                 android:padding="10dp"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"/>
 
             <EditText
                 android:id="@+id/firstname"
@@ -92,14 +93,21 @@
                 android:inputType="text"
                 android:hint="Confirm Password" />
 
-            <Button
-                android:id="@+id/getStartedBnt"
-                android:layout_width="269.44dp"
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="Sign Up"
-                app:cornerRadius="15dp"
-                android:background="@color/black" />
+                app:cardCornerRadius="15dp">
+
+                <Button
+                    android:id="@+id/loginBnt"
+                    android:layout_width="269.44dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/black"
+                    android:clickable="true"
+                    android:text="Sign Up"
+                     />
+            </androidx.cardview.widget.CardView>
 
             <TextView
                 android:id="@+id/textView6"
@@ -113,7 +121,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:id="@+id/textView7"
