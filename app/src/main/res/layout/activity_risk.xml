@@ -15,21 +15,21 @@
         android:background="@color/white">
 
         <TextView
-            android:id="@+id/skip"
+            android:id="@+id/skip2"
             android:layout_width="85dp"
-            android:layout_height="30dp"
+            android:layout_height="48dp"
             android:layout_gravity="right"
             android:layout_marginTop="40dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
             android:clickable="true"
-            android:drawableRight="?attr/homeAsUpIndicator"
+            android:drawableRight="@drawable/arrowright"
             android:padding="5dp"
             android:text="Skip"
             android:textSize="16dp" />
 
         <TextView
-            android:id="@+id/goalQ"
+            android:id="@+id/riskQ"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -74,7 +74,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/diabetesPic"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="right"
@@ -87,7 +87,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/r1"
+            android:id="@+id/r2"
             android:layout_width="285dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -107,10 +107,10 @@
                 >
 
                 <TextView
-                    android:id="@+id/diabetes"
+                    android:id="@+id/hypertension"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Diabetes"
+                    android:text="Hypertension"
                     android:layout_weight="1"
                     android:textStyle="bold"
                     android:textSize="18dp"
@@ -119,11 +119,11 @@
 
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/HypertensionPic"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="right"
-                    android:src="@drawable/risk1" />
+                    android:src="@drawable/risk2" />
 
 
             </LinearLayout>
@@ -132,7 +132,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/r1"
+            android:id="@+id/r3"
             android:layout_width="285dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -152,10 +152,10 @@
                 >
 
                 <TextView
-                    android:id="@+id/diabetes"
+                    android:id="@+id/osteoarthritis"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Diabetes"
+                    android:text="Osteoarthritis"
                     android:layout_weight="1"
                     android:textStyle="bold"
                     android:textSize="18dp"
@@ -164,11 +164,11 @@
 
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/OsteoarthritisPic"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="right"
-                    android:src="@drawable/risk1" />
+                    android:src="@drawable/risk3" />
 
 
             </LinearLayout>
@@ -177,7 +177,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/r1"
+            android:id="@+id/r4"
             android:layout_width="285dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -186,7 +186,6 @@
             app:cardElevation="8dp"
             android:clickable="true"
             app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@color/yellow"
             >
 
             <LinearLayout
@@ -197,10 +196,10 @@
                 >
 
                 <TextView
-                    android:id="@+id/diabetes"
+                    android:id="@+id/KidneyDisease"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Diabetes"
+                    android:text="Kidney Disease"
                     android:layout_weight="1"
                     android:textStyle="bold"
                     android:textSize="18dp"
@@ -209,11 +208,11 @@
 
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/KidneyDiseasePic"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="right"
-                    android:src="@drawable/risk1" />
+                    android:src="@drawable/risk4" />
 
 
             </LinearLayout>
@@ -222,52 +221,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/r1"
-            android:layout_width="285dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            app:cardElevation="8dp"
-            android:clickable="true"
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@color/white"
-            >
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="8dp"
-                >
-
-                <TextView
-                    android:id="@+id/diabetes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Diabetes"
-                    android:layout_weight="1"
-                    android:textStyle="bold"
-                    android:textSize="18dp"
-                    android:padding="5dp"
-                    android:textColor="@color/black"/>
-
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="right"
-                    android:src="@drawable/risk1" />
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/r1"
+            android:id="@+id/r5"
             android:layout_width="285dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -287,10 +241,10 @@
                 >
 
                 <TextView
-                    android:id="@+id/diabetes"
+                    android:id="@+id/LiverDisease"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Diabetes"
+                    android:text="Liver Disease"
                     android:layout_weight="1"
                     android:textStyle="bold"
                     android:textSize="18dp"
@@ -299,11 +253,56 @@
 
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/LiverDiseasePic"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="right"
-                    android:src="@drawable/risk1" />
+                    android:src="@drawable/risk5" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/r6"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardElevation="8dp"
+            android:clickable="true"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/white"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/HeartDisease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heart Disease"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+
+                <ImageView
+                    android:id="@+id/HeartDiseasePic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/risk6" />
 
 
             </LinearLayout>
@@ -325,7 +324,7 @@
                 android:layout_height="25dp"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:src="@drawable/efull" />
+                android:src="@drawable/e" />
 
             <ImageView
                 android:id="@+id/imageView8"
@@ -349,8 +348,9 @@
                 android:layout_height="25dp"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:src="@drawable/e" />
+                android:src="@drawable/efull" />
         </LinearLayout>
 
 
     </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

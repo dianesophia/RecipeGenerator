@@ -41,7 +41,7 @@
             android:textStyle="bold" />
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/r1"
+            android:id="@+id/r2"
             android:layout_width="285dp"
             android:layout_height="100dp"
             android:layout_gravity="center"

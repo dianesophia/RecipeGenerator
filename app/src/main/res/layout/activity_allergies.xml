@@ -15,11 +15,11 @@
         android:background="@color/white">
 
         <TextView
-            android:id="@+id/skip"
+            android:id="@+id/skip3"
             android:layout_width="85dp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_gravity="right"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="40sp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
             android:clickable="true"
@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="20sp"
             android:padding="10dp"
             android:text="Any allergies?"
             android:textColor="@color/yellowTextColor"
@@ -55,7 +55,41 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/r1"
+                    android:id="@+id/a1"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15sp"
+                    android:clickable="true"
+                    app:cardCornerRadius="100dp"
+                    app:cardElevation="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/egg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/egg"
+                        android:contentDescription="Egg" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/eggtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Egg"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/allergy2"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
                     android:layout_gravity="center"
@@ -66,18 +100,101 @@
 
 
                     <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/egg" />
+                        android:id="@+id/milk"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/milk"
+                        android:layout_gravity="center"
+                        android:contentDescription="Milk"/>
                 </androidx.cardview.widget.CardView>
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/milktext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TextView"
+                    android:text="Milk"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/a3"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:clickable="true"
+                    app:cardCornerRadius="100dp"
+                    app:cardElevation="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/nut"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/nut"
+                        android:contentDescription="Nut"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/nuttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nut"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="30dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/a4"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:clickable="true"
+                    app:cardCornerRadius="100dp"
+                    app:cardElevation="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/soybean"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/soybean"
+                        android:contentDescription="Soy Bean"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/soybeantext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Soy Bean"
+                    android:textStyle="bold"
                     android:layout_gravity="center"/>
             </LinearLayout>
 
@@ -87,7 +204,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/r1"
+                    android:id="@+id/a5"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
                     android:layout_gravity="center"
@@ -98,18 +215,21 @@
 
 
                     <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/Group" />
+                        android:id="@+id/CrustaceanPic"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/shrimp"
+                        android:contentDescription="Crustaceans"/>
                 </androidx.cardview.widget.CardView>
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/Crustaceantext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TextView"
+                    android:text="Seafoods"
+                    android:textStyle="bold"
                     android:layout_gravity="center"/>
             </LinearLayout>
             <LinearLayout
@@ -118,7 +238,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/r1"
+                    android:id="@+id/a6"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
                     android:layout_gravity="center"
@@ -129,18 +249,21 @@
 
 
                     <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/Group" />
+                        android:id="@+id/wheat"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/wheat"
+                        android:layout_gravity="center"
+                        android:contentDescription="Wheat"/>
                 </androidx.cardview.widget.CardView>
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/wheattext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TextView"
+                    android:text="Wheat"
+                    android:textStyle="bold"
                     android:layout_gravity="center"/>
             </LinearLayout>
 
@@ -155,206 +278,10 @@
             android:layout_margin="10dp">
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/r1"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="15dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="100dp"
-                    app:cardElevation="8dp">
 
 
-                    <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/Group" />
-                </androidx.cardview.widget.CardView>
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView"
-                    android:layout_gravity="center"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/r1"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="15dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="100dp"
-                    app:cardElevation="8dp">
 
 
-                    <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/Group" />
-                </androidx.cardview.widget.CardView>
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView"
-                    android:layout_gravity="center"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/r1"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="15dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="100dp"
-                    app:cardElevation="8dp">
-
-
-                    <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/Group" />
-                </androidx.cardview.widget.CardView>
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView"
-                    android:layout_gravity="center"/>
-            </LinearLayout>
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            android:layout_margin="10dp">
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/r1"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="15dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="100dp"
-                    app:cardElevation="8dp">
-
-
-                    <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/Group" />
-                </androidx.cardview.widget.CardView>
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView"
-                    android:layout_gravity="center"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/r1"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="15dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="100dp"
-                    app:cardElevation="8dp">
-
-
-                    <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/Group" />
-                </androidx.cardview.widget.CardView>
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView"
-                    android:layout_gravity="center"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/r1"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="15dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="100dp"
-                    app:cardElevation="8dp">
-
-
-                    <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/Group" />
-                </androidx.cardview.widget.CardView>
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView"
-                    android:layout_gravity="center"/>
-            </LinearLayout>
 
         </LinearLayout>
 
@@ -363,7 +290,7 @@
             android:layout_width="125dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25sp"
             app:cardBackgroundColor="@color/white"
             android:clickable="true"
             app:cardCornerRadius="50dp"
